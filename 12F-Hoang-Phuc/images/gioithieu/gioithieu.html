@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        ul {
+            color: #555;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tên:Vũ Hoàng Phúc</h1>
+        <ul>
+            <li><strong>Nghề nghiệp:</strong> Streamer</li>
+            <li><strong>Sở thích:</strong> Chơi game</li>
+           </ul>
+        <button onclick="showMessage()">Tìm hiểu thêm</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "Cảm ơn cô đã ghé thăm trang web!";
+        }
+    </script>
+</body>
+</html>
+
